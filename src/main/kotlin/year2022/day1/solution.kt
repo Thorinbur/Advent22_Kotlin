@@ -3,7 +3,7 @@ package year2022.day1
 import java.io.File
 
 fun main() {
-    val data = File("src/main/kotlin/year2022/day1/1.in").readLines()
+    val data = File("src/main/kotlin/year2022/day1/input").readLines()
     val grouped = data.split { it.isBlank() }
     val sums = grouped.map { it.sumOf { line -> line.toInt() } }
 
