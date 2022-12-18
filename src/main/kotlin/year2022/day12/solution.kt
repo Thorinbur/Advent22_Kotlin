@@ -26,7 +26,7 @@ fun main() {
         value.mapIndexed { columnIndex, char ->
             val height = when (char) {
                 'S' -> 0
-                'E' -> 23
+                'E' -> 25
                 else -> (char - 'a')
             }
             Node(height, columnIndex, rowIndex).also {
